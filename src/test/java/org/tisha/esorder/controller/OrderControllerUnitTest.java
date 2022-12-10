@@ -26,6 +26,6 @@ public class OrderControllerUnitTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray())
                 .andExpect(jsonPath("$").isNotEmpty())
-                .andExpect(jsonPath("$", Matchers.hasSize(3)));
+                .andExpect(jsonPath("$", Matchers.hasSize(2)));
     }
 }
